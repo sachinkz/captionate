@@ -63,6 +63,7 @@ const Home = ({ loginData }) => {
                             controls={true}
                             height={"500px"}
                             width={"100%"}
+                            onBuffer={()=>setCurrentCaption(null)}
                             onPlay={() => setPlaying(true)}
                             onPause={() => setPlaying(false)}
                             playing={true}

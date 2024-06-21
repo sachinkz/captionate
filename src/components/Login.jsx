@@ -29,7 +29,7 @@ const Login = ({ setLoginData, loginData, setOnLoginPage }) => {
     return (
         <div className="w-full flex flex-col gap-5 justify-center items-center h-screen bg-gradient-to-r from-black/85 to-black">
             <h1 className="text-white text-3xl font-bold">WELCOME TO <span className="text-red-600">C</span>APTIONATE</h1>
-            <form onSubmit={navigateHome} className="w-[500px] max-sm:w-[350px] gap-10 flex flex-col justify-center relative  px-5 pb-10 pt-28 rounded-lg bg-white">
+            <form onSubmit={navigateHome} className="w-[500px] max-sm:w-[350px] gap-5 flex flex-col justify-center relative  px-5 pb-10 pt-28 rounded-lg bg-white">
                 <div className='-left-4 -top-2 absolute'>
                     <img className='w-36' src={wrapper} alt="" />
                 </div>
@@ -45,9 +45,9 @@ const Login = ({ setLoginData, loginData, setOnLoginPage }) => {
                 <p className='text-xs font-thin text-red-500'>{error}</p>
                 <button type='submit' className="bg-red-600 rounded-lg py-3 hover:bg-red-400 cursor-pointer text-white">Continue</button>
             </form>
-            <div className='w-[500px] rounded-lg flex flex-col '>
+            <div className='w-[500px] rounded-lg flex flex-col max-sm:w-[350px]'>
                 <p className='text-white mb-4 text-center'>test url</p>
-                <div className='w-full bg-white p-3 flex items-center text-xs justify-between rounded-lg'>
+                <div className='w-full bg-white p-3 flex items-center text-xs justify-between rounded-lg max-sm:w-[350px]'>
                     <span>https://utfs.io/f/ebff9869-4e5e-4b17-a28f-cc659dde8984-46vhvi.mp4</span>
                     <button onClick={onCopy} disabled={copied} className={`${copied ? "text-black/40" : "text-black"}`}>copy</button>
                 </div>
